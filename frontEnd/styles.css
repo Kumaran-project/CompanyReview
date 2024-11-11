@@ -1,0 +1,90 @@
+*{
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: rgba(77, 82, 82, 0.564);
+  color: aliceblue;
+}
+.rating-header{
+  height: 100vh;
+  margin:0px;
+}
+.rating-header h1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.rating-form{
+  
+  margin: 0;
+  background-color: rgba(27, 130, 139, 0.564);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rating-form div {
+  font-family: Arial, sans-serif;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px; 
+ 
+}
+
+
+.rating-container {
+  text-align: center;
+}
+
+.submit,.round{
+  border-radius: 10px;
+  padding: 5px;
+}
+.submit{
+  width:100px;
+}
+.block{
+  display: block;
+}
+.stars {
+  display: inline-block;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ccc; /* Grey color for unselected stars */
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #ff9900; /* Highlight color when hovering */
+}
+
+.star.selected {
+  color: #ffcc00; /* Highlight color for selected stars */
+}
+
+#rating-value {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+.companies{
+  margin-top: 100px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.companies-to-add li{
+margin-top: 10px;
+margin-bottom: 10px;
+}

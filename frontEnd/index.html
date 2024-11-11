@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Review</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="rating-header">
+      <h1>Add a review</h1>
+      <form  class="rating-form" method="POST">
+        <div>
+          <label for="name">Company Name</label>
+          <input type="text" class="round" name="Company_name" id="name" />
+        </div>
+        <div>
+          <label for="name" class="block">pros</label>
+          <textarea name="" class="round" id="pros" cols="100" rows="5"></textarea>
+        </div>
+        <div>
+          <label for="name" class="block" >cons</label>
+          <textarea name=""  cols="100" class="round" id="cons" rows="5"></textarea>
+        </div>
+        <div class="rating-container">
+          <div class="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+          <p id="rating-value">Selected Rating: 0</p>
+        </div>
+        <div>
+          <button class="submit" type="submit">submit</button>
+        </div>
+      </form>
+    </div>
+    <h1></h1>
+    <div class="companies">
+      <form action="">
+      <input type="text" name="search" placeholder="Enter your Company">
+      <button type="submit">submit</button>
+    </form>
+    </div>
+    <h1>Company Reviews</h1>
+    <div class="Company-reviews">
+      <ul class="companies-to-add">
+
+      </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
