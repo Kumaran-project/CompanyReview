@@ -3,7 +3,7 @@ const {sequelize,DataTypes}=require("../config/db.js")
 const reviews=sequelize.define(
   "review",
   {
-    Company_name:{
+    company_name:{
       type:DataTypes.STRING,
       allowNull:false
     },

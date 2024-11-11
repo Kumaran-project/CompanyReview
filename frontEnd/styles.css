@@ -14,6 +14,8 @@ body{
   margin:0px;
 }
 .rating-header h1{
+  /* display: block; */
+  height: 100px;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -31,8 +33,8 @@ body{
 .rating-form div {
   font-family: Arial, sans-serif;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px; 
  
 }
@@ -72,11 +74,6 @@ body{
   color: #ffcc00; /* Highlight color for selected stars */
 }
 
-#rating-value {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #333;
-}
 .companies{
   margin-top: 100px;
  display: flex;
@@ -87,4 +84,22 @@ body{
 .companies-to-add li{
 margin-top: 10px;
 margin-bottom: 10px;
+color:green;
+}
+
+.companies-to-add h1{
+  
+  color:black;
+  }
+
+.line{
+  height:5px;
+  border: 2px solid dashed;
+  background-color: wheat;
+}
+
+.search,.search-submit{
+  height:30px;
+  padding: 5px;
+  border-radius: 10px;
 }
